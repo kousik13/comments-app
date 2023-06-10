@@ -1,0 +1,132 @@
+.comments-app-bg-container {
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comments-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Roboto';
+}
+
+.comments-header {
+  color: #1e293b;
+  font-size: 3rem;
+}
+
+.top-img-and-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.comments-img {
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.form-header {
+  color: #475569;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #dee0e3;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 10rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-submit-button {
+  background-color: #0284c7;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.horizontal-line-separator {
+  border: none;
+  border-top: 0.1rem solid #dee0e3;
+  width: 100%;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.comments-count-container {
+  display: flex;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.comments-count {
+  padding: 0.25rem 0.7rem;
+  background-color: #0284c7;
+  color: #ffffff;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.comments-count-header {
+  color: #1e293b;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.comment-items-container {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .top-img-and-form-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .comments-img {
+    width: 50%;
+    order: 1;
+    padding: 1rem;
+  }
+
+  .form-content-container {
+    width: 50%;
+    margin-right: 10rem;
+  }
+}
